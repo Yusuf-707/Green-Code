@@ -1,0 +1,151 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1440px;
+  height: 2027px;
+  margin: 20px auto;
+  border: 2px solid black;
+  overflow: hidden;
+}
+.container .big-header {
+  width: 100%;
+  height: 1024px;
+  background-image: url(99bfac50b919aa3a674abc4aa51d84fe8b2b09dc.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.container .big-header header {
+  width: 100%;
+  height: 10%;
+  padding: 0 30px;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .big-header header .green-code-logo {
+  display: inline-block;
+}
+.container .big-header header .green-code-logo .black {
+  color: #000000;
+  border-bottom: 2px solid #000000;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-size: 45px;
+  font-style: italic;
+}
+.container .big-header header .green-code-logo .white {
+  font-size: 28px;
+  color: #ffffff;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: #4F8104;
+  margin-left: -7px;
+}
+.container .big-header .big-header-main {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+}
+.container .big-header .big-header-main h1 {
+  font-weight: 255;
+  font-size: 55px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.container .big-header .big-header-main button {
+  width: 260px;
+  height: 60px;
+  background: #4F8104;
+  border: 0;
+  border-radius: 25px;
+  color: #ffffff;
+  font-size: 20px;
+}
+.container .container-main {
+  width: 100%;
+  height: 793px;
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+  text-align: center;
+  padding: 150px;
+}
+.container .container-main h1 {
+  font-size: 40px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.container .container-main p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+}
+.container .container-main .menus {
+  width: 95%;
+  height: auto;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  overflow: hidden;
+  margin: 0 auto;
+  gap: 15px;
+}
+.container .container-main .menus .menu {
+  width: 310px;
+  height: auto;
+  display: flex;
+  flex-flow: column;
+  gap: 4px;
+}
+.container .container-main .menus .menu .img-div {
+  width: 100%;
+  height: 318px;
+}
+.container .container-main .menus .menu .img-div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.container .container-main .menus .menu p {
+  font-size: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+}
+.container footer {
+  width: 100%;
+  height: 210px;
+  background: #4F8104;
+  color: #ffffff;
+  padding: 0 30px;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.container footer .green-code-logo {
+  display: inline-block;
+}
+.container footer .green-code-logo .black {
+  color: #000000;
+  border-bottom: 2px solid #000000;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-size: 45px;
+  font-style: italic;
+}
+.container footer .green-code-logo .white {
+  font-size: 28px;
+  color: #4F8104;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  margin-left: -6px;
+}
+
+/*# sourceMappingURL=style.css.map */

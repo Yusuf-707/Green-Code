@@ -1,0 +1,180 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+$blue-color: blue;
+$green-color: #4F8104;
+$white-color: #ffffff;
+$black-color: #000000;
+
+@mixin px-bg-cl($wh, $ht, $bg, $cl) {
+    width: $wh;
+    height: $ht;
+    background: $bg;
+    color: $cl;
+}
+
+.container {
+    width: 1440px;
+    height: 2027px;
+    margin: 20px auto;
+    border: 2px solid black;
+    overflow: hidden;
+
+    .big-header {
+        width: 100%;
+        height: 1024px;
+        background-image: url(99bfac50b919aa3a674abc4aa51d84fe8b2b09dc.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        header {
+            width: 100%;
+            height: 10%;
+            padding: 0 30px;
+            display: flex;
+            flex-flow: row;
+            align-items: center;
+            justify-content: space-between;
+
+            .green-code-logo {
+                display: inline-block;
+
+
+                .black {
+                    color: $black-color;
+                    border-bottom: 2px solid $black-color;
+                    font-family: "Inter", sans-serif;
+                    font-weight: 300;
+                    font-size: 45px;
+                    font-style: italic;
+                }
+
+                .white {
+                    font-size: 28px;
+                    color: $white-color;
+                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    background-color: $green-color;
+                    margin-left: -7px;
+                }
+            }
+        }
+
+        .big-header-main {
+            width: 100%;
+            height: 90%;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            gap: 20px;
+
+            h1 {
+                font-weight: 255;
+                font-size: 55px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+
+            button {
+                width: 260px;
+                height: 60px;
+                background: $green-color;
+                border: 0;
+                border-radius: 25px;
+                color: $white-color;
+                font-size: 20px;
+            }
+        }
+    }
+
+    .container-main {
+        width: 100%;
+        height: 793px;
+        display: flex;
+        flex-flow: column;
+        gap: 20px;
+        text-align: center;
+        padding: 150px;
+
+        h1 {
+            font-size: 40px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        p {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-style: italic;
+        }
+
+        .menus {
+            width: 95%;
+            height: auto;
+            display: flex;
+            flex-flow: row;
+            justify-content: space-between;
+            overflow: hidden;
+            margin: 0 auto;
+            gap: 15px;
+
+            .menu {
+                width: 310px;
+                height: auto;
+                display: flex;
+                flex-flow: column;
+                gap: 4px;
+
+                .img-div {
+                    width: 100%;
+                    height: 318px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                p {
+                    font-size: 10px;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    font-style: italic;
+                }
+            }
+        }
+    }
+
+    footer {
+        @include px-bg-cl(100%, 210px, $green-color, $white-color);
+        padding: 0 30px;
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        justify-content: space-between;
+
+        .green-code-logo {
+            display: inline-block;
+
+
+            .black {
+                color: $black-color;
+                border-bottom: 2px solid $black-color;
+                font-family: "Inter", sans-serif;
+                font-weight: 300;
+                font-size: 45px;
+                font-style: italic;
+            }
+
+            .white {
+                font-size: 28px;
+                color: $green-color;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                background-color: $white-color;
+                margin-left: -6px;
+            }
+        }
+    }
+}
