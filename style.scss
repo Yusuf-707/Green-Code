@@ -16,6 +16,12 @@ $black-color: #000000;
     color: $cl;
 }
 
+%display-flex {
+    display: flex;
+    align-items: center;
+
+}
+
 .container {
     width: 1440px;
     height: 2027px;
@@ -98,7 +104,7 @@ $black-color: #000000;
         flex-flow: column;
         gap: 20px;
         text-align: center;
-        padding: 150px;
+        padding: 150px 0;
 
         h1 {
             font-size: 40px;
@@ -116,7 +122,6 @@ $black-color: #000000;
             display: flex;
             flex-flow: row;
             justify-content: space-between;
-            overflow: hidden;
             margin: 0 auto;
             gap: 15px;
 
@@ -174,6 +179,56 @@ $black-color: #000000;
                 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
                 background-color: $white-color;
                 margin-left: -6px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .container {
+        width: 100%;
+        height: auto;
+        margin: 0;
+
+        .big-header {
+            header {
+                .green-code-logo {
+                    .black {
+                        font-size: 30px;
+                    }
+
+                    .white {
+                        font-size: 20px;
+                    }
+                }
+            }
+
+            .big-header-main {
+                justify-content: start;
+                padding-top: 200px;
+                gap: 90px;
+            }
+        }
+
+        .container-main {
+            height: auto;
+
+            .menus {
+                flex-flow: column;
+                align-items: center;
+                gap: 20px;
+            }
+        }
+
+        footer {
+            .green-code-logo {
+                .black {
+                    font-size: 30px;
+                }
+
+                .white {
+                    font-size: 20px;
+                }
             }
         }
     }
